@@ -15,11 +15,9 @@ class Home extends Page{
 
         //RETORNA A VIEW DA HOME
         $content = View::render('Pages/Home',[
-        "name" => $obOrganization->name,
-        "description" => $obOrganization->description,
-        "site" => $obOrganization->site]);
+        "name" => $obOrganization->name]);
 
         //RETORNA A VIEW DA PÁGINA
-        return parent::getPage('WDEV - CANAL - HOME', $content);
+        return parent::getPage('HOME > WDEV', $content);
     }
 }
